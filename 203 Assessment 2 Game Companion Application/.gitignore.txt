@@ -1,0 +1,13 @@
+# Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+# Build output
+bin/
+obj/
+# Visual Studio temp files
+*.vsidx
+*.db
+*.backup.json
+*.ipch
+.vs/
