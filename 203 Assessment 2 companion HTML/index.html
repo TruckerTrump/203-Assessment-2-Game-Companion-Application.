@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
-
-     <head>
-        <title>Our Companion Application</title>
-     </head>
-</html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-    <nav class="navbar">
-        Bank Chat Trade>
-    </nav>
-    <h1>
-        Bank Tab
-    </h1>
+ <h1> 
+    Welcome To Our Companion Application.
+ </h1>
+    <div>
+        <label for="Username">Username:</label>
+        <input type="Text" id="Username" name="Username">
+    </div>
+    <p></p>
+    <div>
+        <label for="Pass">Password:</label>
+        <input type="Password" id="Pass" name="Password" minlength="8" required="">
+    </div>
+
+    <input type="submit" value="Sign in">
+
+    <h3>
+        Or Sign Up
+    </h3>
+    <p> Please fill in this form to create an account.</p>
+
+    <label for="email"><b> Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><p>Password</p></label>
+    <input type="password" placeholder="Enter Email" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="Sign Up">Sign Up</button>
 </body>
+</html>
