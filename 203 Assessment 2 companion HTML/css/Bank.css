@@ -1,0 +1,23 @@
+h1 {
+    color: whitesmoke;
+    text-align: center; 
+}
+
+div {
+    color: whitesmoke;
+    text-align: center;
+}
+
+input {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: darkblue
+}
+
+.p1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+   
