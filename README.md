@@ -1,1 +1,2 @@
 This read me is here for the creation and explnataion of our Game Companion Application.
+So far we have a welcome and login page where you log into our application a bank page where the player transfers in game items from themselves the player charater and a bank a perminant place to store items of their choosing we have a certain ammount of slots per player to hold things so its not unlimited so choose wisely what youd like to store the main incentive of this bank tab is to give player some extra storage to use as they see fit 
