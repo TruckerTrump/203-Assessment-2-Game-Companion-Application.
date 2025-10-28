@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet"> 
 </head>
 <body>
- <h1> 
-    Welcome To Our Companion Application.
- </h1>
-    <div>
-        <label for="Username">Username:</label>
-        <input type="Text" id="Username" name="Username">
-    </div>
-    <p></p>
-    <div>
-        <label for="Pass">Password:</label>
-        <input type="Password" id="Pass" name="Password" minlength="8" required="">
-    </div>
+    <div class="container">
+        <h1>Welcome To Our Companion Application.</h1>
+        <div class="form-group">
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username">
+            </div>
+            <div class="form-group">
+                <label for="Pass">Password:</label>
+                <input type="password" id="Pass" name="Password" minlength="8" required>
+            </div>
+            <input type="submit" value="Sign in" class="sign-in-button">
+            </form>
+        </div>
 
-    <input type="submit" value="Sign in" class="sign-in-button">
+        <!-- Welcome Pop-Up-->
+         <div id="welcomePopup">
+            <div class="popup-content">
+                <h3>Welcome!</h3>
+                <p>You have sucessfully logged in!</p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+         </div>
 
-    
+         <script>
+            function handleLogin(event) {
+                event.preventDefault(); // Prevent from submitting/refreshing
+                const username = document.getElementById('Username').value;
+                const password = document.getElementById('Pass').value;
+
+                // Basic Validation
+                if (username && password.length >=8) {
+                    // Show Welcom Pop-Up
+                    document.getElementById('welcomePopup').style.display ='flex';
+                } else {
+                    alert('Please enter valid username and Password')
+                }
+            }
+
+            function closePopup() {
+                // Hide the pop-up
+                document.getElementById('welcomePopup').style.display = 'none';
+                // Reset the form
+                document.getElementById('loginForm').reset();
+            }
+         </script>
+
 </body>
-</html>
