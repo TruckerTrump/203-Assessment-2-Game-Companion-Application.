@@ -122,6 +122,20 @@ p {
     background: #555;
     box-shadow: 0 0 0 2px #ffcc00;
 }
+
+.nav-bar {
+    background: #ffcc00;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
  
 
     
